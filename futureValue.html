@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/futureValue.css">
+    <title>Future Value Cal</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse">
+                <!-- Left links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mortagecal.html">Mortage Calculator</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Annuity Calculator</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <div class="calculator">
+        <h1>Future Value Calculator</h1>
+
+        <p>Amount:<br><input type="text" id="presentValue" /></p>
+        <p>Interest Rate:<br><input type="text" id="interestValue" /></p>
+        <p>Number Of Years:<br><input id="numOfYears" type="text" /></p>
+        <input type="button" id="calBtn" value="Calculate" onclick="onFutureValueBtnClicked()" />
+        <input type="button" value="Refresh" id="refreshBtn"></p>
+        <p>Output:<br><input type="text" id="futureValue" readonly/></p>
+</div>
+
+    <script src="futureValue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
