@@ -1,0 +1,42 @@
+body {
+    background-color: #d391a1;
+    font-family: 'Trebuchet MS';
+}
+  
+h1 {
+    font-size: 35px;
+}
+  
+h1 {
+    font-size: 21px;
+    margin-top: 20px;
+}
+  
+.calculator {
+    width: 700px;
+    height: 600px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px 0px 0px 100px;
+    border-radius: 50px;
+    color: white;
+    margin: 0 auto;
+}
+  
+input {
+    padding: 7px;
+    width: 70%;
+    margin-top: 6.5px;
+}
+
+.navbar-dark .nav-item .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-dark .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
