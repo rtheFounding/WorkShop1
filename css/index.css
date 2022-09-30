@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  
+  .background-one {
+    background-color: #151515;
+  }
+  
+  .background-two {
+    background-color: #151515;
+  }
+  
+  .background-three {
+    background-color: #151515;
+  }
+  
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  
+  a {
+    font-family: "Times New Roman", cursive;
+    font-size: 2.5em;
+  }
+  
+  .link-one {
+    color: #53d9d1;
+    transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+    line-height: 1em;
+  }
+  
+  .link-one:hover {
+    color: #111;
+    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1); 
+  
+    /* <!--https://jhancock532.github.io/link-hover-effects/--> 
+    Transitioning clip-path and pseudo-element transforms to create smooth link hovers.*/
+
+  }
+  
+  .link-one::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #497ac5;
+  
+    clip-path: circle(0% at 50% calc(50%));
+    transition: 0.60s;
+  }
+  
+  .link-one:hover::before {
+    clip-path: circle(100% at 50% 50%);
+  } 
+  
+  .link-one:hover::after {
+    clip-path: polygon(
+      40% 10%,
+      60% 10%,
+      60% 35%,
+      40% 35%,
+      40% 90%,
+      60% 90%,
+      60% 65%,
+      40% 65%
+    );
+  }
+   
+  .link-two {
+    color: #d391a1;
+    transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+  }
+  
+  .link-two:hover {
+    color: rgb(248, 248, 248);
+    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  
+  .link-two::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #f27b9b;
+  
+    clip-path: circle(0% at 50% calc(50%));
+    transition: 0.60s;
+  }
+  
+  .link-two:hover::before {
+    clip-path: circle(100% at 50% 50%);
+  }
+
+  .link-two:hover::after {
+    clip-path: polygon(
+      40% 10%,
+      60% 10%,
+      60% 35%,
+      40% 35%,
+      40% 90%,
+      60% 90%,
+      60% 65%,
+      40% 65%
+    );
+  }
+  
+  .link-three {
+    color: #e0d31c;
+    transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+  }
+  
+  .link-three:hover {
+    color: rgb(2, 2, 2);
+    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  
+  .link-three::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #dfdb23;
+  
+    clip-path: circle(0% at 50% calc(50%));
+    transition: 0.60s;
+  }
+  
+  .link-three:hover::before {
+    clip-path: circle(100% at 50% 50%);
+  }
+
+  .link-three:hover::after {
+    clip-path: polygon(
+      40% 10%,
+      60% 10%,
+      60% 35%,
+      40% 35%,
+      40% 90%,
+      60% 90%,
+      60% 65%,
+      40% 65%
+    );
+  }
