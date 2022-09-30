@@ -1,5 +1,5 @@
 body {
-    background-color: #497ac5;
+    background-color: #4e82cf;
     font-family: 'Trebuchet MS';
 }
   
@@ -14,7 +14,7 @@ h1 {
   
 .calculator {
     width: 400px;
-    height: 500px;
+    height: 600px;
     background-color: black;
     position: absolute;
     left: 50%;
@@ -30,3 +30,12 @@ input {
     width: 70%;
     margin-top: 6.5px;
 }
+
+.navbar-dark .nav-item .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-dark .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
